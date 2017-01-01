@@ -1,4 +1,4 @@
-#docker ngix version 2.0
+#docker ngix version 2.0v
 FROM ubuntu:14.04
 MAINTAINER yuzhantao "yuzhantao@qq.com"
 LABEL version="1.2" location="beijing"

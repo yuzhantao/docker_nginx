@@ -4,4 +4,6 @@ MAINTAINER yuzhantao "yuzhantao@qq.com"
 LABEL version="1.5" location="beijing"
 RUN apt-get -y update && apt-get -y install nginx
 RUN echo 'Hi, I am in your container' > /usr/share/nginx/html/index.html
+ENTRYPOINT ["/usr/sbin/nginx","-g","daemon off;"]
+ENTRYPOINT ["/bin/bash"]
 EXPOSE 80
